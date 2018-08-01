@@ -1,0 +1,4 @@
+.idea
+*.psd
+dist/
+node_modules/

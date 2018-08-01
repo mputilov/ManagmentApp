@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        main {
+            margin: 0 auto;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .controls {
+
+        }
+        table {
+            cellsp
+        }
+        th {
+            font-size: 16px;
+            padding: 10px 10px 10px 20px;
+            border: 1px solid black;
+            background-color: darkgray;
+        }
+        td {
+            font-size: 16px;
+            padding: 10px 10px 10px 20px;
+            border: 1px solid black;
+        }
+        tr:nth-of-type(2n-1){
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+<main>
+<h1>Company Employees</h1>
+<div class="controls">
+    <button>Add</button>
+    <button>Edit</button>
+    <button>Remove</button>
+    <button>View</button>
+</div>
+<table cellspacing="0">
+    <tbody>
+    <tr>
+        <th>LastName</th>
+        <th>FirstName</th>
+        <th>Age</th>
+        <th>Address</th>
+        <th>Position</th>
+    </tr>
+    </tbody>
+</table>
+</main>
+<form class="add-popup"  >
+    <h2>New Employee</h2>
+    <label>LastName<input type="text" id="lastName" required></label>
+    <label>FirstName<input type="text" id="firstName" required></label>
+    <label>Age<input type="number" id="age" required></label>
+    <label>Address<textarea id="address" required></textarea></label>
+    <label>Position<input id="position" type="text"></label>
+    <button>Cancel</button>
+    <button type="submit"  >Save</button>
+</form>
+
+<script src="main.js"></script>
+</body>
+</html>
